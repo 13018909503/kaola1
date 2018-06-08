@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clear:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block; }
+
+#header {
+  width: 100%;
+  height: 100px; }
+  #header .wrap {
+    width: 1000px;
+    height: 101px;
+    margin: 0 auto;
+    position: relative; }
+
+#header .h_left {
+  display: block;
+  width: 330px;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: url(../img/logo.png) no-repeat; }
+
+#header .h_right {
+  position: absolute;
+  width: 504px;
+  height: 100px;
+  left: 458px;
+  background: url(../img/headerright.jpg) no-repeat; }
+
+#banner {
+  width: 100%;
+  height: 520px;
+  background-image: url(../img/bigpic.jpg);
+  background-position: center top;
+  position: relative; }
+  #banner .wrap {
+    width: 1000px;
+    height: 520px;
+    margin: 0 auto;
+    position: relative; }
+    #banner .wrap .som_from {
+      display: block;
+      position: absolute;
+      width: 400px;
+      height: 280px;
+      left: 10px;
+      top: 109px; }
+    #banner .wrap .big_from {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      left: 610px;
+      top: 48px;
+      width: 350px;
+      height: 392px;
+      border: 1px solid #eaeaea; }
+      #banner .wrap .big_from .f_top {
+        padding: 0 40px;
+        height: 53px;
+        position: relative;
+        background-color: #f8f8f8;
+        line-height: 52px; }
+        #banner .wrap .big_from .f_top .ff_left {
+          font-size: 16px;
+          color: red;
+          font-weight: 900; }
+        #banner .wrap .big_from .f_top .ff_right {
+          display: inline-block;
+          height: 52px;
+          position: absolute;
+          right: 40px;
+          font-size: 12px;
+          cursor: pointer; }
+          #banner .wrap .big_from .f_top .ff_right .f_b {
+            color: #51b8f1; }
+        #banner .wrap .big_from .f_top .ff_right:hover .f_b {
+          text-decoration: underline; }
+      #banner .wrap .big_from .f_bottom {
+        width: 270px;
+        padding: 20px 40px 15px;
+        background: #fff; }
+        #banner .wrap .big_from .f_bottom .regmanager {
+          padding-top: 15px; }
+          #banner .wrap .big_from .f_bottom .regmanager .phone_img {
+            width: 17px;
+            height: 34px;
+            padding: 0 11px;
+            float: left;
+            background: url(../img/phone.png) no-repeat;
+            background-position: -23px -25px; }
+          #banner .wrap .big_from .f_bottom .regmanager .form_phone {
+            width: 268px;
+            height: 34px;
+            border: 1px solid #c5cddb;
+            line-height: 34px; }
+            #banner .wrap .big_from .f_bottom .regmanager .form_phone .input_phone {
+              border: 0;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 14px; }
+          #banner .wrap .big_from .f_bottom .regmanager .briefcase {
+            width: 17px;
+            height: 34px;
+            padding: 0 11px;
+            float: left;
+            background: url(../img/phone.png) no-repeat;
+            background-position: -56px -25px; }
+          #banner .wrap .big_from .f_bottom .regmanager .form_pass {
+            margin-top: 30px;
+            width: 268px;
+            height: 34px;
+            border: 1px solid #c5cddb;
+            line-height: 34px; }
+            #banner .wrap .big_from .f_bottom .regmanager .form_pass .input_pass {
+              border: 0;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 14px; }
+          #banner .wrap .big_from .f_bottom .regmanager .rebriefcase {
+            width: 17px;
+            height: 34px;
+            padding: 0 11px;
+            float: left;
+            background: url(../img/phone.png) no-repeat;
+            background-position: -56px -25px; }
+          #banner .wrap .big_from .f_bottom .regmanager .form_repass {
+            margin-top: 30px;
+            width: 268px;
+            height: 34px;
+            border: 1px solid #c5cddb;
+            line-height: 34px; }
+            #banner .wrap .big_from .f_bottom .regmanager .form_repass .input_repass {
+              border: 0;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 14px; }
+          #banner .wrap .big_from .f_bottom .regmanager .email {
+            width: 17px;
+            height: 34px;
+            padding: 0 11px;
+            float: left;
+            background: url(../img/phone.png) no-repeat;
+            background-position: 12px -26px;
+            height: 32px; }
+          #banner .wrap .big_from .f_bottom .regmanager .form_email {
+            margin-top: 30px;
+            width: 268px;
+            height: 34px;
+            border: 1px solid #c5cddb;
+            line-height: 34px; }
+            #banner .wrap .big_from .f_bottom .regmanager .form_email .input_email {
+              border: 0;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 14px; }
+          #banner .wrap .big_from .f_bottom .regmanager .register {
+            margin-top: 15px; }
+            #banner .wrap .big_from .f_bottom .regmanager .register .input_register {
+              border: 0;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 14px;
+              width: 268px;
+              height: 40px;
+              border: 1px solid #c5cddb;
+              color: #fff;
+              background: #e31436; }

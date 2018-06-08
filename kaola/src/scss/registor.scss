@@ -1,0 +1,129 @@
+@import "public";
+@mixin wrap_center($w,$h,$m,$p){
+	width:$w;
+	height:$h;
+	margin:$m;
+	position:$p;
+}
+
+#header{
+	width:100%;height:100px;
+	.wrap{
+		@include wrap_center(1000px,101px,0 auto,relative);
+	};
+};
+
+#header {
+	.h_left{display:block;width:330px;height: 65px;position:$pa;left:0;top: 20px;background: url(../img/logo.png) no-repeat;
+	};
+	.h_right{position:$pa;width:504px;height:100px;left:458px;background: url(../img/headerright.jpg) no-repeat;
+	};
+};
+#banner{width:100%;height: 520px;background-image:url(../img/bigpic.jpg);background-position: center top;position:relative;
+	.wrap{
+		@include wrap_center(1000px,520px,0 auto,relative);
+		.som_from{
+		display:block;
+			@include position(absolute,400px,280px,10px,109px);
+		};
+		.big_from{
+			@include position(absolute,0px,0px,610px,48px);
+			@include border_style1(350px,1px,solid,#eaeaea);
+			.f_top{
+				padding:0 40px;
+				height:53px;
+				position:relative;
+				background-color:#f8f8f8;
+				line-height:52px;
+				.ff_left{
+					font-size:16px;
+					color:red;
+					font-weight:900;
+				};
+				.ff_right{
+					display:inline-block;
+					height:52px;
+					position:$pa;
+					right:40px;
+					font-size:12px;
+					cursor:pointer;
+					.f_b{
+						color:#51b8f1;
+					};
+				};
+				.ff_right:hover .f_b{
+					text-decoration:underline;
+				};
+			};
+			.f_bottom{
+				width:270px;
+				padding:20px 40px 15px;
+				background:#fff;
+				.regmanager{
+					padding-top:15px;
+					.phone_img{
+						@include background_style(-23px,-25px);
+					}
+					.form_phone{
+						@include border_style(268px,34px,1px,solid,#c5cddb);
+						line-height:34px;
+						.input_phone{
+							@include input_style();
+						}
+					}
+
+
+					.briefcase{
+						@include background_style(-56px,-25px);
+					}
+					.form_pass{
+						margin-top:30px;
+						@include border_style(268px,34px,1px,solid,#c5cddb);
+						line-height:34px;
+						.input_pass{
+							@include input_style();
+						}
+					}
+
+
+					.rebriefcase{
+						@include background_style(-56px,-25px);
+					}
+					.form_repass{
+						margin-top:30px;
+						@include border_style(268px,34px,1px,solid,#c5cddb);
+						line-height:34px;
+						.input_repass{
+							@include input_style();
+						}
+					}
+
+
+					.email{
+						@include background_style(12px,-26px);
+						height:32px;
+					}
+					.form_email{
+						margin-top:30px;
+						@include border_style(268px,34px,1px,solid,#c5cddb);
+						line-height:34px;
+						.input_email{
+							@include input_style();
+						}
+					}
+
+					.register{
+						margin-top:15px;
+						.input_register{
+							@include input_style();
+							@include border_style(268px,40px,1px,solid,#c5cddb);
+							color:#fff;
+							background:#e31436;
+						}
+						
+					}
+				}
+			}
+		};
+	};	
+};
