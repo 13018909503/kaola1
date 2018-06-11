@@ -1,8 +1,8 @@
+@charset "utf-8";
 @import "public";
-$w:200px;
-$c:red;
-.box1{
-	width:$w;
-	height:$w;
-	background:$c;
-}
+@import "header";
+@import "headerlogo";
+@import "nav";
+@import "banner";
+@import "main";
+@import "footer";

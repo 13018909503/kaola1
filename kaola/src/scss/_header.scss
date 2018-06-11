@@ -1,0 +1,63 @@
+@mixin wrap ($h){
+	width:1090px;
+	height:$h;
+	margin:0 auto;
+}
+
+#header_nav{
+	background:#000;
+	color:#999;
+	border-bottom:1px solid #ededee;
+	.header_wrap{
+		@include wrap(30px);
+		line-height:30px;
+		font-size:12px;/* header里面的字体大小 */
+		.header_left{
+			float:left;
+			li:hover a{
+				color:#fff;
+			}
+		};
+		.header_right{
+			float:right;
+			li:hover>a{
+				color:#fff;
+			}
+		};
+	};
+};
+
+.header_wrap .header_left>li{
+	float:left;
+	margin-left:25px;
+
+};
+.header_wrap ul a{
+	color:#999;
+	position:relative;
+}
+.header_wrap .header_right>li{
+	padding:0 15px 0 10px;
+	cursor:pointer;
+	position:relative;
+	float:left;
+	.secondnav_one{
+		display:none;
+		position:absolute;
+		padding:0 14px;
+		width:80px;
+		left:-4px;
+		a{
+			display:inline-block;
+		}
+		a:hover{
+			color:red;
+		}
+	}
+	&:hover .secondnav_one{
+		display:block;
+	}
+}
+.header_wrap .header_right>li>a>em{
+	display:block;width:0;height:0;border:4px solid transparent;border-top-color:#666;position:absolute;right:-15px;top:10px;z-index:11;
+}

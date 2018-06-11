@@ -1,0 +1,140 @@
+#nav{
+	margin-top:15px;
+	.nav_wrap{
+		width:1090px;
+		margin:0 auto;
+		.nav_left{
+			cursor:pointer;
+			float:left;
+			height:40px;
+			width:164px;
+			line-height:40px;
+			text-align:left;
+			border-bottom:1px solid #ff5160;
+			background:red;
+			.lineicon{
+				width:15px;
+				height:12px;
+				margin:0 24px 0 15px;
+				display:inline-block;
+				overflow:hidden;
+				i{
+					width:15px;
+					height:0;
+					border-top:2px solid #ddd;
+					display:block;
+					margin-bottom:3px;
+				}
+			}
+			span{
+					color:#fff;
+			}
+			.subclass{
+				display:none;
+				padding:0 1px;
+				background:red;
+				.sub_li{
+					background:red;
+					border-bottom:1px solid #999;
+					position:relative;
+					z-index:9;
+				}
+				.sub_li:hover{
+					background:#fff;
+					.secondnav{
+						display:block;
+					}
+					b{
+						color:red;
+					}
+					.subli_a{
+						background:url(../img/redxin.png) no-repeat;
+						background-position:2px 2px;
+					}
+
+				}
+				.subli_a{
+					width:20px;
+					height:20px;
+					margin:0 18px 0 15px;
+					display:inline-block;
+					overflow:hidden;
+					background:url(../img/xin.png) no-repeat;
+					background-position:2px 2px;
+				}
+				b{
+					font-weight:100;
+					color:#fff;
+				}
+			}
+		};
+		.nav_right{
+			float:left;
+			padding-left:25px;
+			line-height:40px;
+			li{
+				float:left;
+				padding:0 20px;
+				a{
+					color:#000;
+				}
+			}
+		}
+		.nav_left:hover{
+			.subclass{
+				display:block;
+			}
+		}
+	};
+};
+
+/* 二级导航样式 */
+#nav .nav_left .subclass .secondnav{
+	width:930px;
+	height:407px;
+	border:1px solid red;
+	border-left:0;
+	position:absolute;
+	left:163px;
+	top:0px;
+	background:#fff;
+	display:none;
+	.s_sl{
+		width:658px;
+		float:left;
+		padding:0 20px 20px 15px;
+		.s_td{
+			float:left;
+			width:50%;
+			vertical-align:top;
+			.title{
+				font-weight:900;
+				font-size:14px;
+			};
+			.sbox .sbox_a{
+				font-size:13px;
+				display:inline-block;
+				height:14px;
+				line-height:14px;
+				margin-top:20px;
+				padding:0 10px 0 10px;
+				color:#333;
+			};
+		};
+	};
+	.s_sr{
+		width:218px;
+		float:left;
+		height:332px;
+		padding:9px 8px 0 11px;
+		background:#f6f6f6;
+		.s_sr_top .s_sr_a{
+			display:inline-block;
+			width:101px;
+			height:101px;
+			margin:0 3px 2px 0;
+			border:1px solid #eaeaea;
+		}
+	}
+
+}

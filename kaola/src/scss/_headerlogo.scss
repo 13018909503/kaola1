@@ -1,0 +1,102 @@
+#logo{
+	width:100%;
+	.logo_wrap{
+		width:1090px;
+		margin:0 auto;
+		.logo_right{
+			float:left;
+			margin-top:24px;
+			a{
+				display:block;
+				width:330px;
+				height:65px;
+				background: url(../img/logo.png) no-repeat;
+			};
+		};
+	};
+};
+
+#logo .logo_search{
+	float:left;
+	margin-top:23px;
+	position:relative;
+	.search_top{
+		@include border_style(511px,40px,3px,solid,red);
+		line-height:40px;
+		border-radius:40px;
+		.w_icon{
+			display:inline-block;
+			width:14px;
+			height:14px;
+			background:url(../img/icon1.png) no-repeat;
+			background-position:-466px -667px;
+			position:absolute;
+			left:10px;
+			top:16px;
+		};
+		.search_input{
+			width:410px;
+			height:24px;
+			line-height:24px;
+			border:0;
+			outline:none;
+			margin-left:30px;
+		};
+		.icon_right{
+			position:absolute;
+			display:inline-block;
+			width:60px;
+			height:40px;
+			background:red;
+			border-radius:40px;
+			right:2px;
+			.big_search{
+				position:absolute;
+				display:inline-block;
+				cursor:pointer;
+				color:#fff;
+				width:50px;
+				height:40px;
+				background:url(../img/icon1.png) no-repeat;
+				background-position:-491px -656px;
+				right:3px;
+			};
+		};
+	};
+};
+
+.suggestlist{
+	margin-top:5px;
+	.recharge{
+		color:red;
+	}
+}
+
+#logo .search_bottom .suggestlist li{
+	float:left;
+	cursor:pointer;
+	font-size:12px;
+	margin-left:25px;
+};
+
+#logo .logo_wrap .shopping{
+	float:left;
+	margin-top:24px;
+	.m_shopping{
+		display:block;
+		width:106px;
+		height:40px;
+		border:2px solid red;
+		border-radius:40px;
+		margin-left:73px;
+		position:relative;
+		background:url(../img/shopping.png) no-repeat;
+		background-position:13px 9px;
+		.shopping_wrap{
+			position:absolute;
+			right:14px;
+			top:11px;
+			color:#000;
+		}
+	}
+}
