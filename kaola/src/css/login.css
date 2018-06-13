@@ -100,11 +100,9 @@ table {
       top: 109px; }
     #banner .wrap .big_from {
       position: absolute;
-      width: 0px;
-      height: 0px;
-      left: 610px;
-      top: 48px;
       width: 350px;
+      top: 48px;
+      left: 618px;
       border: 1px solid #eaeaea; }
       #banner .wrap .big_from .f_top {
         padding: 0 40px;
@@ -113,15 +111,17 @@ table {
         background-color: #f8f8f8;
         line-height: 52px; }
         #banner .wrap .big_from .f_top .ff_left {
+          display: inline-block;
           font-size: 16px;
           color: red;
-          font-weight: 900; }
+          font-weight: 900;
+          cursor: pointer; }
         #banner .wrap .big_from .f_top .ff_right {
           display: inline-block;
           height: 52px;
           position: absolute;
           right: 40px;
-          font-size: 12px;
+          font-size: 16px;
           cursor: pointer; }
           #banner .wrap .big_from .f_top .ff_right .f_b {
             color: #51b8f1; }
@@ -165,7 +165,7 @@ table {
             background: url(../img/phone.png) no-repeat;
             background-position: -56px -25px; }
           #banner .wrap .big_from .f_bottom .regmanager .form_pass {
-            margin-top: 15px;
+            margin-top: 30px;
             width: 268px;
             height: 34px;
             border: 1px solid #c5cddb;
@@ -183,28 +183,9 @@ table {
             float: left;
             background: url(../img/phone.png) no-repeat;
             background-position: -56px -25px; }
-          #banner .wrap .big_from .f_bottom .regmanager .form_repass {
-            margin-top: 15px;
-            width: 268px;
-            height: 34px;
-            border: 1px solid #c5cddb;
-            line-height: 34px; }
-            #banner .wrap .big_from .f_bottom .regmanager .form_repass .input_repass {
-              border: 0;
-              outline: none;
-              height: 28px;
-              line-height: 28px;
-              font-size: 14px; }
-          #banner .wrap .big_from .f_bottom .regmanager .email {
-            width: 17px;
-            height: 34px;
-            padding: 0 11px;
-            float: left;
-            background: url(../img/phone.png) no-repeat;
-            background-position: 12px -26px;
-            height: 32px; }
           #banner .wrap .big_from .f_bottom .regmanager .register {
-            margin-top: 20px; }
+            margin-top: 35px;
+            margin-bottom: 10px; }
             #banner .wrap .big_from .f_bottom .regmanager .register .input_register {
               border: 0;
               outline: none;
@@ -216,6 +197,13 @@ table {
               border: 1px solid #c5cddb;
               color: #fff;
               background: #e31436; }
+          #banner .wrap .big_from .f_bottom .regmanager .protocol .cookie {
+            cursor: pointer;
+            font-size: 12px; }
+          #banner .wrap .big_from .f_bottom .regmanager .protocol .cookie:hover {
+            color: red; }
           #banner .wrap .big_from .f_bottom .regmanager .protocol .checkbox_val {
             cursor: pointer;
             font-size: 12px; }
+          #banner .wrap .big_from .f_bottom .regmanager .protocol .checkbox_val:hover {
+            color: red; }

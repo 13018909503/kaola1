@@ -7,7 +7,7 @@
     var num = 0; //当前点击的索引
     var $piclilength = $rotation_img.size();
     var timer = null;
-    $circle_li.on('click', function() {
+    $circle_li.on('click', function() {//点击小圆圈事件
         num = $(this).index();
         tabswitch();
     });
@@ -29,14 +29,13 @@
         tabswitch();
     });
 
-    /*function tabswitch() {
-        $circle_li.eq(num).addClass('active').siblings($circle_li).removeClass('active');
+    function tabswitch() {
+        $circle_li.eq(num).addClass('acctive').siblings($circle_li).removeClass('acctive');
         $rotation_img.eq(num).animate({ opacity: 1 }).siblings($rotation_img).animate({ opacity: 0 });
-    }*/
+    }
 
 
     timer = setInterval(function() {
-        alert(num)
         $right.click();
     }, 2000);
 

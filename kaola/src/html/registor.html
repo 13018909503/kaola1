@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>注册账号</title>
 	<link rel="stylesheet" href="../css/registor.css">
 </head>
 <body>
@@ -21,13 +21,15 @@
 					<span class="ff_right">已有账号？<b class="f_b">去登陆&gt;</b></span>
 				</div>
 				<div class="f_bottom">
-					<form action="" class="regmanager">
+					<form action="../../php/reg.php" class="regmanager" method="post">
 						<div class="form_phone">
 							<div class="phone_img" class="clear"></div>
 							<div class="form_input">
 								<input type="text" class="input_phone" name="phone" placeholder="请输入手机号">
 							</div>
 						</div>
+						
+						<p class="use_phone"></p>
 
 						<div class="form_pass">
 							<div class="briefcase" class="clear"></div>
@@ -35,6 +37,8 @@
 								<input type="password" class="input_pass" name="password" placeholder="请输入密码">
 							</div>
 						</div>
+						
+						<p class="use_password"></p>
 
 						<div class="form_repass">
 							<div class="rebriefcase" class="clear"></div>
@@ -42,6 +46,8 @@
 								<input type="password" class="input_repass" name="repassword" placeholder="请再次输入密码">
 							</div>
 						</div>
+
+						<p class="use_repass"></p>
 
 						<div class="register">
 							<input type="submit" class="input_register" name="submit" value="注册">
@@ -55,5 +61,7 @@
 			</div>	
 		</div>
 	</div>
+	<script src="../script/js/jquery.min.js"></script>
+	<script src="../script/js/registor.js"></script>
 </body>
 </html>

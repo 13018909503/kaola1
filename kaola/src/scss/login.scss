@@ -27,8 +27,11 @@
 			@include position(absolute,400px,280px,10px,109px);
 		};
 		.big_from{
-			@include position(absolute,0px,0px,610px,48px);
-			@include border_style1(350px,1px,solid,#eaeaea);
+			position:absolute;
+			width:350px;
+			top:48px;
+			left:618px;
+			border:1px solid #eaeaea;
 			.f_top{
 				padding:0 40px;
 				height:53px;
@@ -36,16 +39,18 @@
 				background-color:#f8f8f8;
 				line-height:52px;
 				.ff_left{
+					display:inline-block;
 					font-size:16px;
 					color:red;
 					font-weight:900;
+					cursor:pointer;
 				};
 				.ff_right{
 					display:inline-block;
 					height:52px;
 					position:$pa;
 					right:40px;
-					font-size:12px;
+					font-size:16px;
 					cursor:pointer;
 					.f_b{
 						color:#51b8f1;
@@ -81,13 +86,11 @@
 					}
 
 
-
-
 					.briefcase{
 						@include background_style(-56px,-25px);
 					}
 					.form_pass{
-						margin-top:15px;
+						margin-top:30px;
 						@include border_style(268px,34px,1px,solid,#c5cddb);
 						line-height:34px;
 						.input_pass{
@@ -99,23 +102,9 @@
 					.rebriefcase{
 						@include background_style(-56px,-25px);
 					}
-					.form_repass{
-						margin-top:15px;
-						@include border_style(268px,34px,1px,solid,#c5cddb);
-						line-height:34px;
-						.input_repass{
-							@include input_style();
-						}
-					}
-
-
-					.email{
-						@include background_style(12px,-26px);
-						height:32px;
-					};
-
 					.register{
-						margin-top:20px;
+						margin-top:35px;
+						margin-bottom:10px;
 						.input_register{
 							@include input_style();
 							@include border_style(268px,40px,1px,solid,#c5cddb);
@@ -125,10 +114,19 @@
 					};
 		
 					.protocol{
-
+						.cookie{
+							cursor:pointer;
+							font-size:12px;
+						}
+						.cookie:hover{
+							color:red;
+						}
 						.checkbox_val{
 							cursor:pointer;
 							font-size:12px;
+						}
+						.checkbox_val:hover{
+							color:red;
 						}
 					}
 				};
