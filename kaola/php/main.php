@@ -26,12 +26,6 @@
 
 
 
-	//详情页放大镜
-	$glass=mysql_query("select * from glass");
-	$glassarr=array();
-	for($i=0;$i<mysql_num_rows($glass);$i++){
-		$glassarr[$i]=mysql_fetch_array($glass,MYSQLI_ASSOC);
-	}
 
 	class indexdata{
 
@@ -39,7 +33,6 @@
 	$index=new indexdata();
 	$index->lunbotu=$bannerarr;
 	$index->neirong=$mainarr;
-	$index->fangdajing=$glassarr;
 	echo json_encode($index);
 
 

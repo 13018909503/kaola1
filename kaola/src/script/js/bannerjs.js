@@ -20,7 +20,10 @@
 		}
 		
 	})
-
+	//点击主页跳转至详情页
+	$goodwrap.on('click','.cat-btn',function(){
+		location.href = '../html/details.html';
+	})
 
 	//主体内容数据请求
 	$.ajax({
@@ -29,20 +32,24 @@
 	}).done(function(mainpic){
 		var $neirong=mainpic.neirong;
 		$.each($neirong,function(index,ele){
-			$goodwrap.append(`<div class="detailwrap"><div class="box"></div><a class="detailpic"><img class="proimg" src=${ele.url}><img class="brandimg" src=${ele.url2}><span class="uniontag">${ele.sale}</span></a><div class="proinfo"><h3 class="tit"><a href="#" class="titlin">${ele.title}</a></h3><p class="w-price"><span class="symbol">${ele.price}</span></p><a class="cat-btn">加入购物车</a></div></div>`)
+			$goodwrap.append(`<div class="detailwrap"><div class="box"></div><a class="detailpic"><img class="proimg" src=${ele.url.split(',')[0]}><img class="brandimg" src=${ele.url2}><span class="uniontag">${ele.sale}</span></a><div class="proinfo"><h3 class="tit"><a href="#" class="titlin">${ele.title}</a></h3><p class="w-price"><span class="symbol">${ele.price}</span></p><a class="cat-btn">加入购物车</a></div></div>`)
 		})
 	})
+
+
 
 
 	$.ajax({//ajax请求
 		url:'../../php/main.php',//获取数据库数据
 		dataType:'json'//转成json格式
-	}).done(function(rank){
-		var $aglass=rank.fangdajing;
+	}).done(function(mainpic){
+		var $neirong=mainpic.neirong;
+		var num=0;
 		for(var i=0;i<3;i++){//拼接图片
-			$list.eq(i).attr('src',$aglass[i].url2);
+			$list.eq(i).attr('src',$neirong[1].url.split(',')[i+1]);
 
 		}
+		//console.log($neirong[1].url.split(',')[3])
 	})
 		
 })(jQuery);

@@ -324,214 +324,125 @@ table {
       margin: 0 3px 2px 0;
       border: 1px solid #eaeaea; }
 
-#banner {
-  width: 100%;
-  position: relative; }
-  #banner .banner_img {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative; }
-    #banner .banner_img .rotation_img {
-      height: 400px;
-      left: 50%;
-      position: absolute;
-      top: 0px;
-      margin-left: -960px; }
-  #banner .circle {
-    position: absolute;
-    right: 600px;
-    bottom: 40px; }
-    #banner .circle .circle_li {
-      float: left;
-      width: 20px;
-      height: 20px;
-      background: #fff;
-      border-radius: 50%;
-      margin-right: 5px;
-      cursor: pointer; }
-    #banner .circle .circle_li.acctive {
-      background: orange; }
-  #banner #bn_left {
-    visibility: hidden;
-    display: inline-block;
-    width: 71px;
-    height: 71px;
-    right: -35px;
-    top: 50%;
-    right: 150px;
-    margin-top: -35px;
-    background: url(../img/but.png) -71px -71px;
-    position: absolute; }
-  #banner #bn_right {
-    visibility: hidden;
-    display: inline-block;
-    width: 71px;
-    height: 71px;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    left: 150px;
-    z-index: 2;
-    background: url(../img/but.png) -71px 0px; }
-
-#banner:hover #bn_right {
-  visibility: visible; }
-
-#banner:hover #bn_left {
-  visibility: visible; }
-
-.active {
-  background: red !important; }
-
-#main {
-  background-color: #dd3e3e; }
-  #main .main_wrap {
-    width: 1000px;
-    margin: 0 auto; }
-    #main .main_wrap .newpeople {
-      height: 617px;
-      background: url(../img/people.jpg); }
-    #main .main_wrap .headline {
-      background: #a51937;
-      margin: 20px auto 10px;
-      width: 1000px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
-      font-size: 28px;
-      color: #fff; }
-    #main .main_wrap .goodwrap .detailwrap {
-      width: 197px;
-      position: relative;
-      float: left;
-      height: 314px;
-      background: #fff;
-      font-size: 12px;
-      margin: 0 3px 3px 0;
-      cursor: pointer; }
-      #main .main_wrap .goodwrap .detailwrap .box {
-        width: 100%;
-        height: 50px;
-        position: absolute;
-        bottom: 105px;
-        background: #000;
-        z-index: 10;
-        opacity: 0.5;
-        display: none; }
-      #main .main_wrap .goodwrap .detailwrap .detailpic {
-        display: inline-block; }
-        #main .main_wrap .goodwrap .detailwrap .detailpic .proimg {
-          width: 197px;
-          height: 197px; }
-        #main .main_wrap .goodwrap .detailwrap .detailpic .brandimg {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          width: 28px; }
-        #main .main_wrap .goodwrap .detailwrap .detailpic .uniontag {
-          width: 44px;
-          padding: 4px 0;
-          font-size: 12px;
-          position: absolute;
-          top: 0;
-          right: 0;
-          line-height: 18px;
-          text-align: center;
-          color: #fff;
-          background-color: #fda438; }
-      #main .main_wrap .goodwrap .detailwrap .proinfo {
+#main1 {
+  width: 1090px;
+  height: 500px;
+  margin: 0 auto; }
+  #main1 .col {
+    display: inline-block; }
+  #main1 .m_mycart {
+    font-size: 14px;
+    color: #333;
+    line-height: 32px;
+    margin-top: 15px; }
+    #main1 .m_mycart .tt {
+      top: -1px;
+      font-weight: bold; }
+  #main1 .head {
+    color: #999;
+    border: 1px solid #eaeaea;
+    height: 34px;
+    line-height: 34px; }
+    #main1 .head .col1 {
+      width: 114px;
+      padding: 0 10px; }
+    #main1 .head .col2 {
+      text-indent: 28px;
+      width: 402px;
+      padding: 0 10px; }
+    #main1 .head .col3 {
+      width: 130px;
+      padding: 0 10px; }
+    #main1 .head .col4 {
+      width: 127px;
+      padding: 0 10px; }
+    #main1 .head .col5 {
+      width: 108px;
+      padding: 0 10px; }
+    #main1 .head .col6 {
+      width: 65px;
+      padding: 0 7px; }
+  #main1 .m-cart {
+    background: #fffbf0;
+    padding: 20px 0;
+    margin-top: 20px; }
+    #main1 .m-cart .col7 {
+      padding-right: 0;
+      width: 37px; }
+    #main1 .m-cart .col8 {
+      width: 510px; }
+      #main1 .m-cart .col8 .imgwrap {
+        vertical-align: middle;
         display: inline-block;
-        position: relative;
-        padding: 0px 12px;
-        width: 173px;
-        background: #fff; }
-        #main .main_wrap .goodwrap .detailwrap .proinfo .tit {
-          width: 170px;
-          margin-top: 10px;
+        margin-right: 50px;
+        width: 80px;
+        height: 80px;
+        background: red; }
+      #main1 .m-cart .col8 .txtwrap {
+        vertical-align: middle;
+        width: 220px;
+        padding-right: 30px;
+        display: inline-block;
+        margin: auto 0; }
+        #main1 .m-cart .col8 .txtwrap .txt1 {
+          font-size: 14px;
           height: 36px;
-          line-height: 18px; }
-          #main .main_wrap .goodwrap .detailwrap .proinfo .tit .titlin {
-            display: inline-block;
-            width: 170px;
-            color: #000;
-            font-weight: 900;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            word-break: break-all; }
-        #main .main_wrap .goodwrap .detailwrap .proinfo .w-price {
-          width: 41px;
-          height: 24px;
-          position: absolute;
-          left: 12px;
-          bottom: -50px;
-          line-height: 24px; }
-          #main .main_wrap .goodwrap .detailwrap .proinfo .w-price .symbol {
-            margin-right: 6px;
-            color: #e31436;
-            font-size: 18px;
-            font-weight: 900; }
-        #main .main_wrap .goodwrap .detailwrap .proinfo .cat-btn {
-          display: block;
-          width: 60px;
-          height: 26px;
-          line-height: 26px;
-          position: absolute;
-          bottom: -52px;
-          right: 12px;
-          padding: 0 6px;
-          background: #d22147;
-          color: #fff; }
-    #main .main_wrap .goodwrap .detailwrap:hover .box {
-      display: block; }
-
-#footer {
-  width: 100%;
-  height: 965px;
-  background-image: url(../img/footer.png);
-  background-repeat: no-repeat;
-  background-position: -236px; }
-
-#loutinav {
-  width: 100px;
-  position: fixed;
-  top: 50%;
-  right: 50px;
-  border: 1px solid #ddd;
-  display: block;
-  margin-top: -51px; }
-
-#loutinav ul li {
-  width: 100px;
-  height: 30px;
-  border-bottom: 1px dotted #DDDDDD;
-  font-size: 13px;
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  background: #918888;
-  color: #fff; }
-
-#loutinav ul li span {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10; }
-
-#loutinav ul li.active span {
-  background: #c00;
-  color: #fff; }
-
-#loutinav ul li:hover span {
-  background: #c00;
-  color: #fff;
-  display: block; }
-
-#loutinav ul li.last {
-  background: #5e4a4a;
-  color: #fff;
-  border-bottom: 1px solid #ddd; }
+          line-height: 18px;
+          overflow: hidden;
+          margin-top: -2px; }
+        #main1 .m-cart .col8 .txtwrap .txt2 {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #999;
+          height: 20px;
+          padding-top: 2px;
+          margin-bottom: 2px;
+          line-height: 20px; }
+    #main1 .m-cart .col9 {
+      width: 88px;
+      margin-left: 20px; }
+      #main1 .m-cart .col9 span {
+        font-weight: bold;
+        font-size: 14px;
+        color: #333; }
+    #main1 .m-cart .col10 {
+      width: 103px;
+      text-align: center;
+      margin-left: 32px; }
+      #main1 .m-cart .col10 .minus {
+        display: inline-block;
+        width: 20px;
+        height: 21px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #bcbcbc; }
+      #main1 .m-cart .col10 .ipt {
+        width: 43px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-width: 1px 0;
+        border: 1px solid #bcbcbc;
+        vertical-align: bottom; }
+      #main1 .m-cart .col10 .push {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #bcbcbc; }
+    #main1 .m-cart .col11 {
+      width: 50px;
+      margin-left: 80px; }
+    #main1 .m-cart .col12 {
+      width: 90px;
+      height: 90px;
+      margin-left: 43px; }
+      #main1 .m-cart .col12 .uopt {
+        color: #000;
+        display: block;
+        height: 90px;
+        line-height: 90px;
+        text-align: center; }

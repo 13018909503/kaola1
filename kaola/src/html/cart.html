@@ -2,11 +2,182 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>网易考拉</title>
+	<link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
-	<div>11111111</div><div>11111111</div><div>11111111</div><div>11111111</div><div>11111111</div>
-	<div>11111111</div><div>11111111</div><div>11111111</div><div>11111111</div><div>11111111</div>
-	<p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p><p>222222222</p>
+	<!-- 导航头部 -->
+	<div id="header_nav">
+		<div class="header_wrap" class="clear">
+			<ul class="header_left">
+				<li>考拉欢迎你！</li>
+				<li>
+					<a href="#">登陆</a>
+					<!-- 跳转登录页面 -->
+				</li>
+				<li>
+				<a href="registor.html"  target="_blank">免费注册</a>
+				</li>
+				<li>
+					<a href="#">手机考拉淘购</a>
+				</li>
+			</ul>
+			<ul class="header_right" class="clear">
+				<li>
+					<a href="#">每日签到</a>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<!-- 添加二级导肮 -->
+				<li>
+					<a href="#">
+						个人中心
+						<em></em>
+					</a>
+					<div class="secondnav_one">
+						<a href="#">我的优惠券</a>
+						<a href="#">我的红包</a>
+						<a href="#">我拍考拉豆</a>
+						<a href="#">账号管理</a>
+						<a href="#">我的实名认证</a>
+						<a href="#">我收藏的商品</a>
+						<a href="#">我关注的品牌</a>
+						<a href="#">售后管理</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						客户服务
+						<em></em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						充值中心
+						<em></em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						消费者权益
+						<em></em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						更多
+						<em></em>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- logo部分 -->
+	<div id="logo">
+		<div class="logo_wrap clear">
+			<div class="logo_right">
+				<a href="#"></a>
+			</div>
+				<!-- 搜索 -->
+			<div class="logo_search">
+				<div class="search_top">
+					<span class="w_icon"></span>
+					<input type="text" class="search_input">
+					<span class="icon_right">
+							<span class="big_search"></span>
+					</span>
+				</div>
+				<div class="search_bottom">
+					<ul class="suggestlist clear">
+						<li class="recharge">话费充值</li>
+						<li>面膜</li>
+						<li>德运</li>
+						<li>铁元</li>
+						<li>sk2</li>
+						<li>眼霜</li>
+						<li>麦片</li>
+					</ul>
+				</div>
+			</div>
+			<div class="shopping">
+				<!-- 购物车跳转 -->
+				<a href="#" class="m_shopping">
+					<span class="shopping_wrap">购物车</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 购物商品 -->
+	<div id="main1">
+		<div class="cartbox">
+			<h3 class="m_mycart">
+				<span class="tt">我的购物车</span>
+			</h3>
+			<div class="m_cartbox">
+				<div class="head">
+					<div class="col col1">
+						<input type="checkbox" class="u-chk" name="selectAll" id="selectAll" checked="checked">
+						<label for="selectAll" class="lab">全选</label>
+					</div>
+					<div class="col col2">
+						商品信息
+					</div>
+					<div class="col col3">
+						单价
+					</div>
+					<div class="col col4">
+						数量
+					</div>
+					<div class="col col5">
+						金额(元)
+					</div>
+					<div class="col col6">
+						操作
+					</div>
+				</div>
+				<div class="m-cart">
+					<div class="actgoods">
+						<div class="col col7">
+							<input type="checkbox" class="u-chk" name="selectGood" checked="checked">
+						</div>
+						<div class="col col8">
+							<a href="#" target="_blank" class="imgwrap">
+     						 	<img src="">
+    						</a>
+    						<div class="txtwrap">
+    							<p class="txt1">
+    								mandom 曼丹 眼唇专用卸妆液  145毫升 平价中的战斗机
+    							</p>
+    							<p class="txt2">
+    								支持7天无忧退货
+    							</p>
+    						</div>
+						</div>
+						<div class="col col9">
+							<div class="newprice">
+								<span>59.9</span>
+							</div>
+						</div>
+						<div class="col col10">
+							<span class="minus">-</span>
+							<input type="text" class="ipt">
+							<span class="push">+</span>
+						</div>
+						<div class="col col11">
+								<span class="sum">59.9</span>
+						</div>
+						<div class="col col12">
+							<a href="#" class="uopt">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer1" style="width:100%">
+		<img src="../img/footer1_02.png" alt="" style="width:100%">
+	</div>
 </body>
 </html>

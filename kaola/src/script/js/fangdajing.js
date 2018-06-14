@@ -6,10 +6,12 @@
 	var $picli=$('.list_ul .list_li');//list下面的li
 	var $bf_box=$('.bf_box')
 	var $bf=$('.bf')//大放大镜
-	
+	var $minus=$('.minus')//减号
+	var $ipt=$('.ipt')//商品数量
+	var $push=$('.push')//加号
+	var num=0;
 	$picli.on('click',function(){//点击小图，大图对应改变
 		var $url=$(this).find('img').attr('src');
-		console.log($url)
 		$spic.find('img').attr('src',$url);
 		$bf.find('img').attr('src',$url)
 	})
@@ -28,7 +30,6 @@
 		$(this).on('mousemove',function(ev){
 			var $left=ev.pageX-$wrap.offset().left-$sf.width()/2;
 			var $top=ev.pageY-$wrap.offset().top-$sf.height();
-			console.log($top)
 			if($left<=0){
 				$left=0
 			}else if($left>=$spic.width()-$sf.width()){
@@ -54,5 +55,17 @@
 		$sf.css("visibility","hidden");
 	})
 
+	$push.on('click',function(){
+		num++;
+		$ipt.val(num);
+	})
+	$minus.on('click',function(){
+		num--;
+		if(num<=0){
+			num=0;
+		}
+		$ipt.val(num);
+
+	})
 
 })(jQuery);

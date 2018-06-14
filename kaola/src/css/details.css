@@ -352,10 +352,36 @@ table {
         height: 46px;
         text-align: center;
         border: 2px solid #d41c44;
-        background-color: #ffeced;
         color: #d31b44;
         line-height: 46px;
-        margin-left: 40px; }
+        margin-left: 40px;
+        text-align: center; }
+        #glass .glass_wrap .glass_shopping .buybtn .buybtn_left .minus {
+          display: inline-block;
+          width: 35px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 900; }
+        #glass .glass_wrap .glass_shopping .buybtn .buybtn_left .ipt {
+          width: 45px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          border-width: 1px 0;
+          border: 1px solid #bcbcbc;
+          margin-bottom: 3px; }
+        #glass .glass_wrap .glass_shopping .buybtn .buybtn_left .push {
+          display: inline-block;
+          width: 35px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          font-size: 18px;
+          cursor: pointer;
+          font-weight: 900; }
       #glass .glass_wrap .glass_shopping .buybtn .buybtn_right {
         display: inline-block;
         text-align: center;

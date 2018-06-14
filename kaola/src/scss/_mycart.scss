@@ -1,0 +1,150 @@
+#main1{
+	.col{
+		display:inline-block;
+	}
+	width:1090px;
+	height:500px;
+	margin:0 auto;
+	.m_mycart{
+		font-size: 14px;
+	    color: #333;
+	    line-height: 32px;
+	    margin-top: 15px;
+	    .tt{
+		    top: -1px;
+		    font-weight: bold;
+	    }
+	}
+	.head{
+		color: #999;
+	    border: 1px solid #eaeaea;
+	    height: 34px;
+	    line-height: 34px;
+		.col1{
+			width:114px;
+			padding:0 10px;
+		}
+		.col2{
+			text-indent:28px;
+			width:402px;
+			padding:0 10px;
+		}
+		.col3{
+			width:130px;
+			padding:0 10px;
+		}
+		.col4{
+			width:127px;
+			padding:0 10px;
+		}
+		.col5{
+			width:108px;
+			padding:0 10px;
+		}
+		.col6{
+			width:65px;
+			padding:0 7px;
+		}
+	}
+	.m-cart{
+		background:#fffbf0;
+		padding:20px 0;
+		margin-top:20px;
+		.col7{
+			padding-right: 0;
+		    width: 37px;
+		}
+		.col8{
+			width: 510px;
+			.imgwrap{
+				vertical-align: middle;
+				display:inline-block;
+				margin-right:50px;
+				width: 80px;
+    			height: 80px;
+    			background:red;
+			}
+			.txtwrap{
+				vertical-align:middle;
+			    width: 220px;
+			    padding-right: 30px;
+			    display:inline-block;
+			    margin:auto 0;
+			    .txt1{
+			    	font-size:14px;
+			    	height: 36px;
+				    line-height: 18px;
+				    overflow: hidden;
+				    margin-top: -2px;
+			    }
+			    .txt2{
+			    	margin-top:10px;
+			    	font-size:14px;
+			    	color: #999;
+				    height: 20px;
+				    padding-top: 2px;
+				    margin-bottom: 2px;
+				    line-height:20px;
+			    }
+			}
+		}
+		.col9{
+			width: 88px;
+			margin-left:20px;
+			span{
+				font-weight: bold;
+			    font-size: 14px;
+			    color: #333;
+			}
+		}
+		.col10{
+			width: 103px;
+    		text-align: center;
+    		margin-left:32px;
+    		.minus{
+    			display:inline-block;
+    			width: 20px;
+			    height: 21px;
+			    line-height: 20px;
+			    text-align: center;
+			    cursor: pointer;
+			    border: 1px solid #bcbcbc;
+    		}
+    		.ipt{
+    			width: 43px;
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    border-width: 1px 0;
+			    border: 1px solid #bcbcbc;
+			    vertical-align: bottom;
+    		}
+    		.push{
+    			display:inline-block;
+				width: 20px;
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    cursor: pointer;
+			    border: 1px solid #bcbcbc;
+    		}
+		}
+		.col11{
+			width:50px;
+			margin-left:80px;
+		}
+		.col12{
+			width:90px;
+			height:90px;
+			margin-left:43px;
+			.uopt{
+				color:#000;
+				display:block;
+				height:90px;
+				line-height:90px;
+				text-align:center;
+			}
+
+		}
+	}
+}
